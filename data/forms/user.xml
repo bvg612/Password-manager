@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<form xmlns="http://nsfw3.nicksoft.info/form.xsd">
+    <action>/create_user.html</action>
+
+    <attribute name="id">userForm</attribute>
+    <template>create_user.html</template>
+    <translate>false</translate>
+    <fclass>formWidth</fclass>
+
+    <field name="id">
+        <type>display</type>
+        <label>ID</label>
+    </field>
+
+    <field name="name">
+        <type>text</type>
+        <label>Name</label>
+        <attribute name="class">bfField formWidth</attribute>
+        <required />
+    </field>
+
+    <field name="email">
+        <type>text</type>
+        <label>Email</label>
+        <attribute name="class">bfField formWidth</attribute>
+        <required />
+        <validator type="email" />
+    </field>
+
+    <field name="password">
+        <type>password</type>
+        <label>Password</label>
+        <attribute name="id">userPassword</attribute>
+        <attribute name="class">bfField formWidth</attribute>
+    </field>
+
+    <field name="password2">
+        <type>password</type>
+        <label>Password again</label>
+        <attribute name="id">userPassword</attribute>
+        <attribute name="class">bfField formWidth</attribute>
+    </field>
+
+    <field name="admin">
+        <type>boolean</type>
+        <label>Admin</label>
+        <attribute name="id">userIsAdmin</attribute>
+    </field>
+
+</form>
+

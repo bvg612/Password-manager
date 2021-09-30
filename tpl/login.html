@@ -1,0 +1,16 @@
+<h1>Select user to login</h1>
+
+<table class="dataTable">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+  <block users>
+  <tr>
+    <td>{%userId}</td>
+    <td><a href="./login.html?userId={%userId}">{%name}</a></td>
+  </tr>
+  </block>
+</table>
+
+{%debug}

@@ -1,0 +1,53 @@
+<script type="text/javascript">
+  function delRecord(id) {
+    if (!confirm('Are you sure you want to delete this record '+id))
+      return false;
+    var fid = document.getElementById('delId');
+    fid.value = id;
+    fid.form.submit();
+  }
+</script> <h1>Password manager</h1>
+
+
+<div class="search-bar">
+  <form action="./" method="get">
+    <label>Search:
+      <input type="text" name="sq" placeholder="Search..."  value="{%sQuery}" title="Search query" id="serchQuery"/>
+    </label>
+    <input type="submit" value="Search" class="button blue"/>
+  </form>
+</div>
+
+<a></a>
+
+<form action="/del_record.html" method="post">
+  <input type="hidden" name="id" id="delId" value="" />
+</form>
+<a href="/newrecord.html" class="button green">New record</a>
+<br /><br />
+{%pageNumbers}
+<block records>
+<table class="dataTable">
+  <tr>
+    <th>Id</th>
+    <th style="width: 120px;">&nbsp;</th>
+    <th>Title</th>
+    <th>Login</th>
+    <th>Description</th>
+  </tr>
+  <block row>
+  <tr>
+    <td>{%id}</td>
+    <td>
+      <a href="/edit_record.html?id={%id}&sf={&from}" class="button gray">Edit</a>
+      <a href="javascript:delRecord({%id})" class="button red">[&nbsp;X&nbsp;]</a>
+    </td>
+    <td><a href="/showrec.html?id={%id}&sf={&from}"><h2>{%title}</h2></a></td>
+    <td>{%login}</td>
+    <td>{%description}</td>
+  </tr>
+  </block>
+</table>
+</block>
+{%pageNumbers}
+<pre>{%debug}</pre>

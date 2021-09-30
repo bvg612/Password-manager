@@ -1,0 +1,24 @@
+id ICON "lock.ico"
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904E4"
+    BEGIN
+      VALUE "CompanyName", "Nicksoft Solutions"
+      VALUE "FileDescription", "Nicksoft Password Tool Launcher"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "pt_launcher"
+      VALUE "LegalCopyright", "Nicksoft Solutions"
+      VALUE "OriginalFilename", "PasswordToolLauncher.exe"
+      VALUE "ProductName", "Nicksoft Password Tool Launcher"
+      VALUE "ProductVersion", "1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x809, 1252
+  END
+END

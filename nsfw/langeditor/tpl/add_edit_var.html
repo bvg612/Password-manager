@@ -1,0 +1,27 @@
+{%f_formTag}
+<table class="add-lang-var">
+  <tr>
+    <th>&nbsp;</th>
+    <td><input type="submit" value="Save" class="big-button" /></td>
+  </tr>
+  <tr>
+    <th>Var Name</th>
+    <td>{%f_varName}</td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>{%f_description}</td>
+  </tr>
+  <block langRow>
+  <tr>
+    <th>{%q_language}</th>
+    <td><textarea name="{%langCode}">{%text}</textarea></td>
+  </tr>
+  </block>
+  <tr>
+    <th>&nbsp;</th>
+    <td><input type="submit" value="Save" class="big-button" /></td>
+  </tr>
+</table>
+  {%f_hiddenFields}
+{%f_closeForm}

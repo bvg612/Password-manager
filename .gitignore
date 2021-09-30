@@ -1,0 +1,9 @@
+.idea
+*.exe
+.*.swp
+*.bak
+*.tar
+*.tar.gz
+*.tar.bz
+*.zip
+*.rar

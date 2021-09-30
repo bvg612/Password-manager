@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+
+#  RewriteCond %{REQUEST_URI} ^\/tpl
+#  RewriteRule tpl(\/[a-z0-9]+\/.*\.(css|js|jpg|png)) /load_res.php?img=$1 [L,QSA]
+#  RewriteRule tpl(\/admin/css/\/.*\.(css|js|jpg|png)) /load_res.php?img=$1 [L,QSA]
+
+  #RewriteCond %{REQUEST_URI} ^\/phpinfo.html
+
+  #RewriteCond %{REQUEST_URI} ^\/phpinfo\.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule phpinfo\.html /phpinfo.php [L,QSA]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([/a-zA-Z0-9_.-]+)$ /index.php?rwuri=$1 [L,QSA]
+
+</IfModule>

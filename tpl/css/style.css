@@ -1,0 +1,340 @@
+@keyframes blink-breathe-redbg {
+    0%   {background: red;}
+    50%  {background: #8e0400;}
+    100%   {background: red;}
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+.dnone {
+    display: none;
+}
+
+.fixed-width, table.vtable td.fixed-width {
+    font-family: "Courier New", courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.iblock {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+a img {
+    border : none;
+}
+
+@font-face {
+    font-family: MaskedPassword;
+    src: url("/data/fonts/fontello.ttf");
+    src: url("/data/fonts/password.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: MaskedPassword1;
+    src: url("/data/fonts/fontello.ttf");
+}
+
+@font-face {
+    font-family: MaskedPassword2;
+    src: url("/data/fonts/password.ttf");
+}
+.password {
+    font-size: 21px !important;
+    height: 24px;
+}
+.MaskedPassword {
+    font-family: MaskedPassword !important;
+}
+
+
+.unselectable{
+    user-select: none; /* CSS3 (little to no support) */
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}
+
+table.unselectableRows tr{
+    user-select: none; /* CSS3 (little to no support) */
+    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: none; /* Gecko (Firefox) */
+    -webkit-user-select: none; /* Webkit (Safari, Chrome) */
+}
+
+
+ul.breadcrumbs {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 20px 0px;
+    display: block;
+    background-color: #ffffe0;
+    border: 1px solid #3c3c3c;
+}
+ul.breadcrumbs li {
+    list-style: none;
+    display: inline-block;
+}
+ul.breadcrumbs li a {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+ul.breadcrumbs li a:hover {
+    background-color: #ffffa0;
+}
+ul.breadcrumbs a.textonly {
+    color: black;
+    cursor: default;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #2761bd;
+    font-weight: bold;
+}
+
+a.highlightbg:hover{
+    text-decoration: underline;
+
+}
+
+a.icon img {
+    vertical-align:middle;
+    border: none;
+}
+
+table.dataTable {
+    border-collapse: collapse;
+}
+
+table.dataTable td, table.dataTable th{
+    padding: 6px;
+    border: 1px solid #dadada;
+    font-family: arial, sans-serif;
+    page-break-inside: avoid;
+}
+
+table.dataTable tr:hover {
+    background-color: rgba(108, 155, 255, 0.18);
+}
+
+
+table.dataTable tr.totalsRow td{
+    border-top: 2px solid black;
+}
+
+table.highlightable tr.highlight{
+    background-color: #a9ffd3;
+}
+table.dataTable.highlightable tr.highlight:hover{
+    background-color: #b7ffde !important;
+}
+
+
+table.vtable {
+    border-collapse: collapse;
+}
+
+table.vtable td, table.vtable th{
+    padding: 6px;
+    border: 1px solid #dadada;
+    font-family: arial, sans-serif;
+}
+
+
+table.vtable th {
+    text-align-last: right;
+}
+
+
+ul.menu {
+    list-style: none;
+    padding: 0px;
+}
+
+ul.menu li {
+    list-style: none;
+    display: inline-block;
+    height: 37px;
+}
+
+ul.menu li a {
+    height: 21px;
+    padding: 8px;
+    background: #144ec3;
+    color: #f9f9f9;
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: normal;
+    background-image: linear-gradient(to bottom, #1554f0 0%, #1552ce 45%, #144dc1 55%, #134bbc 100%);
+    border-bottom: 1px solid #134bbc;
+    border-right: 1px solid #134bbc;
+    border-left: 1px solid #185fef;
+    border-top: 1px solid #185fef;
+}
+
+ul.menu li a:hover {
+    background-image: linear-gradient(to bottom, #1557f7 0%, #1657da 45%, #1654d1 55%, #1551cb 100%);
+}
+
+/*
+ul.menu li:last-of-type a{
+    border-right: none;
+}
+*/
+
+.bfField {
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+.formWidth {
+    width: 400px;
+}
+input:read-only, textarea:read-only{
+    background-color: #f1f1f1;
+    border: 1px solid #a9a9a9;
+}
+
+.priceRight {
+    text-align: right;
+}
+
+.w620 {
+    width: 620px;
+}
+
+.pickerButton {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.autofilled {
+    background-color: #ededed;
+}
+
+div#bulkUpdateFormDiv table th.highlight, div#bulkUpdateFormDiv table td.highlight {
+    background-color: #c8ffbb;
+}
+
+table.highlightable tr.highlight{
+    background-color: #a9ffd3;
+}
+table.dataTable.highlightable tr.highlight:hover{
+    background-color: #b7ffde !important;
+}
+
+div.counter {
+    margin: 10px;
+    padding: 10px;
+}
+div.counter.running {
+    background: #caffc9;
+}
+
+div.counterBox {
+    /*display: inline-block;*/
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid #7290ff;
+    border-radius: 100px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.counter a h2 {
+    color: #000;
+    display: inline-block;
+}
+div.counterBox h3 {
+    font-size: 22px;
+}
+
+div.counterBox h3 span span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.counterBox.controls {
+    /*vertical-align: top;*/
+
+}
+
+#timersTable tr.ongoing{
+    background: #ffeff2;
+}
+
+.pageNumbers {
+    margin: 20px;
+    font-family: Arial, serif;
+}
+.pageNumbers a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid gray;
+
+    padding: 4px 9px;
+    margin: 5px;
+    color: #0d0d0d;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border-color: #ababab #525252 #525252 #ababab;
+    border-radius: 3px;
+    /*background-color: #f0f0f0;*/
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f0f0+0,e2e2e2+100 */
+    background: #f0f0f0; /* Old browsers */
+    background: -moz-linear-gradient(top, #f0f0f0 0%, #e2e2e2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f0f0f0 0%,#e2e2e2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f0f0f0 0%,#e2e2e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+}
+
+.pageNumbers a:active{
+    background: #e8e8e8;
+}
+
+.pageNumbers a.selected, .pageNumbers a.selected:active, .pageNumbers a.selected:visited {
+    border: 1px solid gray;
+    border-color: #525252 #ababab #ababab #525252;
+    cursor: default;
+    color: #6c6c6c;
+    background-color: #fafafa;
+}
+
+.pageNumbers a.eb {
+    display: inline-block;
+    padding: 4px 9px;
+}
+
+.pageNumbers a.eb.prev, .pageNumbers a.eb.first {
+    margin-right: 25px;
+}
+
+.pageNumbers a.eb.next, .pageNumbers a.eb.last {
+    margin-left: 25px;
+}

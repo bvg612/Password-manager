@@ -1,0 +1,39 @@
+<script type="text/javascript">
+  function delUser(id) {
+    if (!confirm('Are you sure you want to delete this user '+id))
+      return false;
+    var fid = document.getElementById('delId');
+    fid.value = id;
+    fid.form.submit();
+  }
+</script> <h1>Password manager</h1>
+
+
+<h1>Users list</h1>
+<br />
+<form action="/del_user.html" method="post">
+  <input type="hidden" name="id" id="delId" value="" />
+</form>
+<a href="/create_user.html" class="button green">New User</a>
+<br /><br />
+<table class="dataTable">
+  <tr>
+    <th>ID</th>
+    <th></th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <block users>
+    <tr>
+      <td>{%userId}</td>
+      <td>
+        <a href="/edit_user.html?id={%userId}&sf={&from}" class="button gray">Edit</a>
+        <a href="javascript:delUser('{%userId}')" class="button red">[ X ]</a>
+      </td>
+      <td>{%q_name}</td>
+      <td>{%q_email}</td>
+    </tr>
+  </block>
+</table>
+
+{%debug}

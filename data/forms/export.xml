@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<form xmlns="http://nsfw3.nicksoft.info/form.xsd">
+    <action>/export.html</action>
+
+    <attribute name="id">exportForm</attribute>
+    <template>export.html</template>
+    <translate>false</translate>
+    <fclass>formWidth</fclass>
+
+</form>

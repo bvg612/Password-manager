@@ -1,0 +1,17 @@
+<i18>
+  <structure>
+    CREATE TABLE IF NOT EXISTS `i18` (
+    `id` int(10) unsigned NOT NULL,
+    `lang` char(2) CHARACTER SET ascii NOT NULL,
+    `var_name` varchar(32) CHARACTER SET ascii NOT NULL,
+    `updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `translation` text COLLATE utf8_unicode_ci NOT NULL,
+    `description` text COLLATE utf8_unicode_ci NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `lang` (`lang`,`var_name`),
+    KEY `updated` (`updated`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  </structure>
+  <data>
+  </data>
+</i18>

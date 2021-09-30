@@ -1,0 +1,25 @@
+<phpunit bootstrap="bootstrap.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         verbose="true"
+         stopOnFailure="false">
+
+<!--
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../vendor/nicksoft/nsfw</directory>
+            &lt;!&ndash;
+            <exclude>
+                <directory suffix=".php">tests</directory>
+            </exclude>
+            &ndash;&gt;
+        </whitelist>
+    </filter>
+-->
+
+</phpunit>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  {%pageInfo}
+  <link rel="stylesheet" type="text/css" href="{%tpl:css/style.css}"/>
+  <script type="text/javascript" src="{%tpl:js/ns.js}"></script>
+  <script type="text/javascript" src="{%tpl:js/lang_editor.js}"></script>
+  {%htmlHead}
+</head>
+<body>
+
+<div id="header">
+</div>
+
+<div id="topMenu">
+
+  <ul>
+
+    <li><a href="{%siteUrl}">Back to site</a></li>
+
+    <li><a href="{%langEditorUrl}" title="Language editor home">Editor Home</a></li>
+
+    <li><a href="/admin/settings/">Settings</a></li>
+
+  </ul>
+</div>
+<div id="center">
+  {%errors}
+  {%center}
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

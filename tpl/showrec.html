@@ -1,0 +1,32 @@
+<script type="text/javascript">
+  window.ns.addReadyHandler(function () {
+    var passField = document.getElementById('recordPassword');
+    var button = document.createElement('BUTTON');
+    var icon = document.createElement('IMG');
+    icon.src = '/img/eye-24.png';
+    button.style = 'vertical-align: bottom;position: relative;top:0px';
+    button.appendChild(icon);
+    button.onclick = function () {
+      if (window.hasClass(passField, 'MaskedPassword')){
+        window.removeClass(passField, 'MaskedPassword');
+      } else {
+        window.addClass(passField, 'MaskedPassword');
+      }
+    };
+    var cell = passField.parentElement;
+    cell.appendChild(document.createTextNode(" "));
+    cell.appendChild(button);
+
+
+  })
+</script>
+<a href="/" class="button blue"> &lt;&lt; Back to records</a> <a href="/edit_record.html?id={%id}" class="button gray">Edit</a>
+<br /><br />
+<table class="vtable" style="min-width: 600px;">
+  <block row>
+  <tr>
+    <th style="width: 100px;">{%field}</th>
+    <td class="{%valueClass}">{%value}</td>
+  </tr>
+  </block>
+</table>

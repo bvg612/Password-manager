@@ -1,0 +1,71 @@
+<script type="text/javascript">
+  window.ns.addReadyHandler(window.langListScripts.install.createDelegate(window.langListScripts));
+
+</script>
+
+
+<form action="{%langEditorUrl}select_lang.html" method="post" id="selectLangsForm">
+<table>
+  <tr><td>Reference language</td><td>Language to edit</td></tr>
+  <tr>
+    <td><select name="refLang">
+      {%refLangOptions}
+    </select></td>
+    <td><select name="editLang">
+      {%editLangOptions}
+    </select></td>
+    <td><input type="submit" name="submitButton" value="select" /></td>
+  </tr>
+</table>
+  <input type="hidden" name="bu" value="{%bu}" />
+</form>
+<br/>
+
+<block filterForm>
+<form action="" method="post" id="filterForm">
+  <!--<label><input type="checkbox" name="showOnlyEmpty" value="1" > Show only empty</label>-->
+  {%f_showOnlyEmpty} {%fl_showOnlyEmpty}
+
+  <input type="hidden" name="bu" value="{%bu}" />
+  <input type="hidden" name="ac" value="filter"/>
+</form>
+</block>
+
+<br/>
+<div class="top-links">
+  <a href="{%langEditorUrl}add_edit_var.html">Add Var</a>
+</div>
+<br/>
+
+<form action="{%langEditorUrl}" method="post">
+<table class="dataTable">
+  {%block:buttons}
+  <tr>
+    <th>code</th>
+    <th>{%refLang}</th>
+    <th>{%editLang}</th>
+    <th>Description</th>
+  </tr>
+  <block langRow>
+  <tr class="langrow">
+    <td><a href="{%langEditorUrl}add_edit_var.html?varName={%langVar}&bu={%u_bu}">{%langVar}</a></td>
+    <td><div class="box">{%refText}</div></td>
+    <td><textarea name="tr[{%id}]" rows="6" data-id="{%id}">{%editText}</textarea></td>
+    <td>{%description}</td>
+  </tr>
+  </block>
+  <block buttons>
+  <tr>
+    <td colspan="4" align="center">
+      <input type="reset" value="Reset contents" class="big-button" /><span style="display: inline-block;width: 50px;"></span>
+      <input type="submit" value="Save changes" class="big-button" />
+    </td>
+  </tr>
+  </block>
+
+</table>
+  <input type="hidden" name="bu" value="{%q_bu}"/>
+</form>
+
+url: {%langEditorUrl} , {%siteUrl}
+

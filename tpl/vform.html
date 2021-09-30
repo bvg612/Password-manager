@@ -1,0 +1,22 @@
+{%prefix}
+{%f_errors}
+{%f_formTag}
+<table class="vtable">
+
+  <block field>
+    <tr>
+      <th>{%label}</th>
+      <td>{%field}</td>
+    </tr>
+  </block>
+  <tr>
+    <td></td>
+    <td align="right">
+      <input type="reset" value="reset" class="button brown" />
+      <input type="submit" value="{%submitTitle}" class="button blue"/>
+    </td>
+  </tr>
+</table>
+{%f_hiddenFields}
+{%f_closeForm}
+{%suffix}

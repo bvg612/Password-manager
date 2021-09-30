@@ -1,0 +1,73 @@
+<script type="text/javascript">
+  window.ns.addReadyHandler(function () {
+    var passField = document.getElementById('recordPassword');
+    var button = document.createElement('BUTTON');
+    var icon = document.createElement('IMG');
+    icon.src = '/img/eye-24.png';
+    button.style = 'vertical-align: bottom;position: relative;top:0px';
+    button.appendChild(icon);
+    button.onclick = function () {
+      if ((passField.getAttribute('type')==='password')){
+        passField.setAttribute('type', 'text');
+      } else {
+        passField.setAttribute('type', 'password');
+      }
+      return false;
+    };
+    var cell = passField.parentElement;
+    cell.appendChild(document.createTextNode(" "));
+    cell.appendChild(button);
+  })
+</script>
+
+{%f_formTag}
+<table class="vtable">
+  <tr>
+    <th>{%fl_id}</th>
+    <td></td>
+    <td>{%f_id}</td>
+  </tr>
+  <tr>
+    <th>{%fl_title}</th>
+    <td><img src="/img/insecure-red-24.png" alt="Secure field! The data in this field is NOT encrypted" /></td>
+    <td>{%f_title}</td>
+  </tr>
+  <tr>
+    <th>{%fl_login}</th>
+    <td><img src="/img/insecure-red-24.png" alt="Secure field! The data in this field is NOT encrypted" /></td>
+    <td>{%f_login}</td>
+  </tr>
+  <tr>
+    <th>{%fl_password}</th>
+    <td><img src="/img/secure-green-24.png" alt="Secure field! The data in this field is encrypted" /></td>
+    <td>{%f_password}</td>
+  </tr>
+  <tr>
+    <th>{%fl_url}</th>
+    <td><img src="/img/insecure-red-24.png" alt="Secure field! The data in this field is NOT encrypted" /></td>
+    <td>{%f_url}</td>
+  </tr>
+  <tr>
+    <th>{%fl_description}</th>
+    <td><img src="/img/insecure-red-24.png" alt="Secure field! The data in this field is NOT encrypted" /></td>
+    <td>{%f_description}</td>
+  </tr>
+  <tr>
+    <th>{%fl_secureNote}</th>
+    <td><img src="/img/secure-green-24.png" alt="Secure field! The data in this field is encrypted" /></td>
+    <td>{%f_secureNote}</td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+    <td>
+      <input type="submit" value="Save" class="button green"/>
+      <input type="reset" value="Reset" onclick="if (!confirm('Reset to defaults?'))return false;" class="button brown" />
+      <input type="button" value="Cancel"
+             onclick="if (confirm('Are you sure you want to dicard changes'))window.location.href = '/';"
+             class="button red" />
+
+    </td>
+  </tr>
+</table>
+{%f_hiddenFields}
+{%f_closeForm}

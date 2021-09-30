@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="keywords" content="passwords" />
+  <meta name="description" content="" />
+  {%page}
+  {%htmlHead}
+<script type="text/javascript">
+  ns.addReadyHandler(function () {
+    window.Event.add(document.body, 'unload', function () {
+      ns.eraseCookie('kp');
+    })
+  });
+</script>
+</head>
+<body>
+<div class="header">
+  <ul class="menu"><li><a href="/">Home</a></li><li><a href="/import.html">Import</a></li><li><a href="/export.html">Export</a></li><li><a href="/profile.html">Profile</a></li><li><a href="/users.html">Users</a></li><li><a href="/logout.html">logout</a></li></ul>
+</div>
+{%errors}
+{%center}
+</body>
+</html>

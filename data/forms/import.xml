@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<form xmlns="http://nsfw3.nicksoft.info/form.xsd">
+    <action>/import.html</action>
+    <!--<attribute name="class">cssclass</attribute>-->
+    <attribute name="id">importForm</attribute>
+    <attribute name="enctype">multipart/form-data</attribute>
+    <template>vform.html</template>
+    <translate>false</translate>
+    <fclass>formWidth</fclass>
+
+    <field name="file">
+        <type>file</type>
+        <label>File</label>
+        <attribute name="class">bfField formWidth</attribute>
+        <required />
+    </field>
+
+    <field name="removeDuplicates">
+        <type>boolean</type>
+        <label>Remove Duplicates</label>
+        <attribute name="class">bfField</attribute>
+        <value>1</value>
+    </field>
+
+    <field name="type">
+        <type>select</type>
+        <label>Type</label>
+        <attribute name="class">bfField formWidth</attribute>
+    </field>
+
+</form>

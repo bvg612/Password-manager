@@ -1,3 +1,3 @@
 <?php
-echo 'asdasd';
-?>
+
+require __DIR__.'/rewrite.php';

@@ -1,0 +1,11 @@
+<id_gen>
+  <structure>
+    CREATE TABLE IF NOT EXISTS `id_gen` (
+    `name` varchar(32) NOT NULL,
+    `next_id` bigint(20) NOT NULL DEFAULT '1',
+    PRIMARY KEY (`name`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  </structure>
+  <data>
+  </data>
+</id_gen>

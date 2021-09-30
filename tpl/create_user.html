@@ -1,0 +1,41 @@
+{%f_formTag}
+{%f_hiddenFields}
+<table class="vtable">
+  <tr>
+    <th>{%fl_id}</th>
+    <td>{%f_id}</td>
+  </tr>
+  <tr>
+    <th>{%fl_name}</th>
+    <td>{%f_name}</td>
+  </tr>
+  <tr>
+    <th>{%fl_email}</th>
+    <td>{%f_email}</td>
+  </tr>
+  <tr>
+    <th>{%fl_password}</th>
+    <td>
+      {%f_password}
+    </td>
+  </tr>
+  <tr>
+    <th>{%fl_password2}</th>
+    <td>
+      {%f_password2}
+      {%passwordHelp}
+    </td>
+  </tr>
+  <tr>
+    <th>{%fl_admin}</th>
+    <td>{%f_admin}</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:right;">
+      <input type="submit" value="Save" class="button green"/>
+    </td>
+  </tr>
+</table>
+{%f_closeForm}
+
+

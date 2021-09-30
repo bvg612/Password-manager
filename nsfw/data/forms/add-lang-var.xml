@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<form xmlns="http://nsfw3.nicksoft.info/form.xsd">
+  <action>{%web:/add_edit_var.html}</action>
+  <attribute name="id">form1</attribute>
+  <template>newform.html</template>
+  <translate>false</translate>
+
+  <field name="varName">
+    <type>text</type>
+    <label>Var Name</label>
+    <validator type="regex">
+      <pattern>/^[a-z0-9_/]+$/i</pattern>
+      <errormessage>v_form_error</errormessage>
+    </validator>
+    <required/>
+  </field>
+
+  <field name="description">
+    <type>textarea</type>
+  </field>
+
+</form>

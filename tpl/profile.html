@@ -1,0 +1,37 @@
+<form action="/profile.html" method="post">
+  <input type="hidden" name="action" value="set-password"/>
+  <table class="vtable" style="width: 600px;">
+    <tr>
+      <th style="width: 140px;"><label for="cpass">Current Password</label></th>
+      <td><input type="password" name="cpassword" id="cpass" class="bfField formWidth"/></td>
+    </tr>
+    <tr>
+      <th><label for="npass">New Password</label></th>
+      <td><input type="password" name="newpassword" id="npass" class="bfField formWidth"/></td>
+    </tr>
+    <tr>
+      <th><label for="npass2">Pepeat password</label></th>
+      <td><input type="password" name="newpassword2" id="npass2" class="bfField formWidth" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Change Password" class="button red"></td>
+    </tr>
+  </table>
+</form>
+
+<br /><br />
+
+<form action="/profile.html" method="post">
+  <input type="hidden" name="action" value="set-name"/>
+  <table class="vtable" style="width: 600px;">
+    <tr>
+      <th style="width: 140px;"><label for="name">Name</label></th>
+      <td><input type="text" name="name" value="{%name}" id="name" class="bfField formWidth"/></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Change Name" class="button green"></td>
+    </tr>
+  </table>
+</form>

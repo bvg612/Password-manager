@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<form xmlns="http://nsfw3.nicksoft.info/form.xsd">
+    <action>/newrecord.html</action>
+    <!--<attribute name="class">cssclass</attribute>-->
+    <attribute name="id">recordForm</attribute>
+    <template>record.html</template>
+    <translate>false</translate>
+    <fclass>formWidth</fclass>
+
+    <field name="id">
+        <type>display</type>
+        <label>ID</label>
+    </field>
+
+    <field name="title">
+        <type>text</type>
+        <label>Title</label>
+        <attribute name="class">bfField formWidth</attribute>
+        <required />
+    </field>
+
+    <field name="login">
+        <type>text</type>
+        <label>Login</label>
+        <attribute name="class">bfField formWidth</attribute>
+    </field>
+
+    <field name="password">
+        <type>password</type>
+        <label>Password</label>
+        <attribute name="id">recordPassword</attribute>
+        <attribute name="class">bfField formWidth</attribute>
+        <required />
+    </field>
+
+    <field name="url">
+        <type>text</type>
+        <label>URL</label>
+        <attribute name="class">bfField formWidth</attribute>
+    </field>
+
+    <field name="description">
+        <type>textarea</type>
+        <label>Description</label>
+        <attribute name="class">bfField formWidth</attribute>
+        <attribute name="rows">6</attribute>
+    </field>
+    <field name="secureNote">
+        <type>textarea</type>
+        <label>Secure Note</label>
+        <attribute name="class">bfField formWidth</attribute>
+        <attribute name="rows">6</attribute>
+    </field>
+</form>
